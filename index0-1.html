@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Scripit Tabela If e Else </title>
+
+    <script>
+
+
+        $nome = prompt("Digite Seu Nome")//Variavel para o nome
+        $idade = prompt("Digite Sua Idade")//Variavel para a idade
+        $sexo = prompt("Digite Seu Sexo [M] Masculino ou [F] Feminino")//Variavel para o sexo
+
+        if (($sexo == "m") || ($sexo == "M") || ($sexo == "F") || ($sexo == "f")) {
+
+
+            if (($sexo == "M") || ($sexo == "m")) {
+                
+                if ($idade >= 18) {
+
+                    document.write("<table border='6' witdh='650'>")
+                    document.write("<tr height='30px' bgcolor='#14562cf'>")
+
+                    document.write("<td width='200' height='30px' align='center'> <b> NOME </b> </td>")
+                    document.write("<td width='50' height='30px' align='center'> <b> IDADE </b> </td>")
+                    document.write("<td width='100' height='30px' align='center'> <b> SEXO </b> </td>")
+                    document.write("<td width='300' height='100px' align='center'> <b> FOTO </b> </td>")
+
+                    document.write("<tr height='30px' bgcolor='#14562cf'>")
+
+                    document.write("<td width='200' height='30px' align='center'> <b> " + $nome + " </b> </td>")
+                    document.write("<td width='50' height='30px' align='center'> <b> " + $idade + " </b> </td>")
+                    document.write("<td width='100' height='30px' align='center'> <b> " + $sexo + " </b> </td>")
+                    document.write("<td width='300' height='100px' align='center'> <img src='IMG/HOMENS/2416a57ec634dfebcfcc3cf6fad1bc7d.png' width='100%'> </td>")
+
+                    document.write("</tr>")
+                    document.write("</table>")
+                }
+                else {
+
+                    document.write("<table border='6' witdh='650'>")
+                    document.write("<tr height='30px' bgcolor='#14562cf'>")
+
+                    document.write("<td width='200' height='30px' align='center'> <b> NOMES </b> </td>")
+                    document.write("<td width='50' height='30px' align='center'> <b> IDADES </b> </td>")
+                    document.write("<td width='100' height='30px' align='center'> <b> SEXO </b> </td>")
+                    document.write("<td width='300' height='100px' align='center'> <b> FOTOS </b> </td>")
+
+                    document.write("<tr height='30px' bgcolor='#14562cf'>")
+
+                    document.write("<td width='200' height='30px' align='center'> <b> " + $nome + " </b> </td>")
+                    document.write("<td width='50' height='30px' align='center'> <b> " + $idade + " </b> </td>")
+                    document.write("<td width='100' height='30px' align='center'> <b> " + $sexo + " </b> </td>")
+                    document.write("<td width='300' height='100px' align='center'> <img src='IMG/HOMENS/6776241.png' width='100%'> </td>")
+
+                    document.write("</tr>")
+                    document.write("</table>")
+                }
+
+            }else{
+
+                if (($sexo == "F") || ($sexo == "f")) {
+
+                    if ($idade >= 18) {
+                        document.write("<table border='6' witdh='650'>")
+                        document.write("<tr height='30px' bgcolor='#c90a7a'>")
+
+                        document.write("<td width='200' height='30px' align='center'> <b> NOME </b> </td>")
+                        document.write("<td width='50' height='30px' align='center'> <b> IDADE </b> </td>")
+                        document.write("<td width='100' height='30px' align='center'> <b> SEXO </b> </td>")
+                        document.write("<td width='300' height='100px' align='center'> <b> FOTO </b> </td>")
+
+                        document.write("<tr height='30px' bgcolor='#7df5641'>")
+
+                        document.write("<td width='200' height='30px' align='center'> <b> " + $nome + " </b> </td>")
+                        document.write("<td width='50' height='30px' align='center'> <b> " + $idade + " </b> </td>")
+                        document.write("<td width='100' height='30px' align='center'> <b> " + $sexo + " </b> </td>")
+                        document.write("<td width='300' height='100px' align='center'> <img src='IMG/MULHERES/234355.png' width='100%'> </td>")
+
+                        document.write("</tr>")
+                        document.write("</table>")
+                    }
+                    else {
+
+                        document.write("<table border='6' witdh='650'>")
+                        document.write("<tr height='30px' bgcolor='#c90a7a'>")
+
+                        document.write("<td width='200' height='30px' align='center'> <b> NOMES </b> </td>")
+                        document.write("<td width='50' height='30px' align='center'> <b> IDADES </b> </td>")
+                        document.write("<td width='100' height='30px' align='center'> <b> SEXO </b> </td>")
+                        document.write("<td width='300' height='100px' align='center'> <b> FOTOS </b> </td>")
+
+                        document.write("<tr height='30px' bgcolor='#7544671'>")
+
+                        document.write("<td width='200' height='30px' align='center'> <b> " + $nome + " </b> </td>")
+                        document.write("<td width='50' height='30px' align='center'> <b> " + $idade + " </b> </td>")
+                        document.write("<td width='100' height='30px' align='center'> <b> " + $sexo + " </b> </td>")
+                        document.write("<td width='300' height='100px' align='center'> <img src='IMG/MULHERES/4568694825892.png' width='100%'> </td>")
+                        document.write("</tr>")
+                        document.write("</table>")
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="#345890">
+
+</body>
+
+</html>
